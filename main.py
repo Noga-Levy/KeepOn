@@ -1,5 +1,25 @@
 import streamlit as st
 
+st.markdown(
+    "<style>"
+    ".gradient-text {"
+    "background-image: linear-gradient(135deg, #1a006e, #ffa1ee);"
+    "-webkit-background-clip: text;"
+    "-webkit-text-fill-color: transparent;"
+    "font-weight: bold; /* Make text bold if desired */"
+    "}"
+    "</style>",
+    unsafe_allow_html=True)
+
+st.markdown("<h1 class='gradient-bg'></h1>",
+            unsafe_allow_html=True)
+
+st.markdown("<h1 class='gradient-text' style='text-align: center;'>KeepOn</h1>",
+            unsafe_allow_html=True)
+
+st.markdown("<h4 class='gradient-text' style='text-align: center;'>For when you need help fueling the flame</h3>",
+            unsafe_allow_html=True)
+
 if "motivation_needs" not in st.session_state:
     st.session_state.motivation_needs = ["Exercise", "Cleaning", "Cooking", "Shopping", "General Pick-Me-Up"]
 
