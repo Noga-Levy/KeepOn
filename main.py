@@ -6,7 +6,7 @@ st.markdown(
     "background-image: linear-gradient(135deg, #1a006e, #ffa1ee);"
     "-webkit-background-clip: text;"
     "-webkit-text-fill-color: transparent;"
-    "font-weight: bold; /* Make text bold if desired */"
+    "font-weight: bold;"
     "}"
     "</style>",
     unsafe_allow_html=True)
@@ -17,18 +17,14 @@ st.markdown("<h1 class='gradient-bg'></h1>",
 st.markdown("<h1 class='gradient-text' style='text-align: center;'>KeepOn</h1>",
             unsafe_allow_html=True)
 
-st.markdown("<h4 class='gradient-text' style='text-align: center;'>For when you need help fueling the flame</h3>",
+st.markdown("<h2 class='gradient-text' style='text-align: center;'>For when you need help fueling the flame</h2>",
             unsafe_allow_html=True)
 
-if "motivation_needs" not in st.session_state:
-    st.session_state.motivation_needs = ["Exercise", "Cleaning", "Cooking", "Shopping", "General Pick-Me-Up"]
+st.markdown("<br><br><h5 style='text-align: center;'>What do you need to be motivated to do?</h5>",
+            unsafe_allow_html=True)
 
-dropdown_box = st.selectbox("What do you need to be motivated to do?",
-                            st.session_state.motivation_needs,
-                            index=None,
-                            placeholder="Click one of the options or enter your own (using more than 1 word)...",
-                            accept_new_options=True)
-
-if dropdown_box not in st.session_state.motivation_needs and dropdown_box is not None:
-    st.write(f"You made a new option: {dropdown_box}. NOTE: This option will not save!")
-    st.session_state.motivation_needs.append(dropdown_box)
+motivation = st.text_input("",
+                           value=None,
+                           help="This will be used to create a personalized motivational message, so be sure to use "
+                                "more than one word in your response.",
+                           placeholder="Write what you need motivations for...")
