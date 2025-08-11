@@ -1,2 +1,3 @@
 protobuf
 streamlit
+google-genai
