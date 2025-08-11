@@ -1,4 +1,5 @@
 import streamlit as st
+from motivational_speech_maker import speech
 
 st.markdown(
     "<style>"
@@ -27,4 +28,7 @@ motivation = st.text_input("",
                            value=None,
                            help="This will be used to create a personalized motivational message, so be sure to use "
                                 "more than one word in your response.",
-                           placeholder="Write what you need motivations for...")
+                           placeholder="\"I need motivation to...\"")
+
+if motivation:
+    st.markdown(f"{speech(motivation)}")
