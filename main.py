@@ -1,7 +1,7 @@
 import streamlit as st
 from motivational_speech_maker import speech
 
-st.set_page_config(page_title="KeepOn", page_icon="./YourIconFileName.ico", layout="wide")
+st.set_page_config(page_title="KeepOn", page_icon="./heart.ico", layout="wide")
 
 st.markdown(
     "<style>"
