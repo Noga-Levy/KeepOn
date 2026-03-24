@@ -15,7 +15,7 @@ Thus, KeepOn's goal is to help everyone stay motivated so they can complete thei
 ## Features
 - **Motivational Speech Generator** ~ Utilizing Google's Gemini 2.5 Flash generative AI, KeepOn creates uplifting messages to its users within a matter of seconds.
 - **Web-Based UI** ~ For easier use, KeepOn features a simple, web-based UI.
-- **Minimal Dependencies** ~ KeepOn is a straightforward, Python-based tool with only three dependencies--check [NOTICE.md](https://github.com/Noga-Levy/KeepOn/blob/master/NOTICE.md) for more information.
+- **Minimal Dependencies** ~ KeepOn is a straightforward, Python-based tool with only two dependencies--check [NOTICE.md](https://github.com/Noga-Levy/KeepOn/blob/master/NOTICE.md) for more information.
 
 ## Running
 To run it locally, 
