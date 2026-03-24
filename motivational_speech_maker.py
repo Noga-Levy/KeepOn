@@ -1,10 +1,10 @@
-import google
+from google import genai
 import streamlit as st
 
 # Get API key from environment variable
 apiKey = st.secrets["GEMINI_API_KEY"]
 
-client = google.genai.Client(api_key=apiKey)
+client = genai.Client(api_key=apiKey)
 
 
 # Function to compose the speech with Markdown.
