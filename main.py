@@ -1,3 +1,9 @@
+import os
+
+# Temporary fix for streamlit/protobuf error. Unfortunately, it does make the site slower.
+# It also must be set before importing streamlit.
+os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
+
 import streamlit as st
 from motivational_speech_maker import speech
 
