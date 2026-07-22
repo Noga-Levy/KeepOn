@@ -3,7 +3,7 @@
 <p align="center">
 	<img src="https://img.shields.io/badge/language-Python-3776AB">
 	<img src="https://img.shields.io/badge/language-HTML-%23E34F26">
-  <img src="https://img.shields.io/badge/AI-Gemini_2.5_Flash-%234285F4">
+    <img src="https://img.shields.io/badge/AI-Gemini_2.5_Flash-%234285F4">
 	<img src="https://img.shields.io/badge/license-Apache_2.0-green">
 </p>
 <h2 align="center">For when you need help fueling the flame</h2>
@@ -22,7 +22,7 @@ To run it locally,
 1. Clone the repository.
 2. Next, install dependencies using the command `pip install -r requirements.txt`.
 3. Replace the `apiKey` variable in [`motivational_speech_maker.py`](https://github.com/Noga-Levy/KeepOn/blob/master/motivational_speech_maker.py) with your own Google Gemini API key.
-4. Run with the command `streamlit run app.py`.
+4. Run with the command `streamlit run main.py`.
 
 Alternatively, simply use the website to run it: https://keep-on.streamlit.app/
 
